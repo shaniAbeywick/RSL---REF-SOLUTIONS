@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the comprehensive range of air conditioning services offered by RSL Ref Solutions. From installation and maintenance to repairs and consultations, our skilled team provides top-notch HVAC solutions. Learn more about how we can enhance your indoor comfort and optimize the performance of your air conditioning systems. Trust RSL for reliable, efficient, and customer-centric HVAC services.">
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- google recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="index.js"></script>
+    <!-- email js -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <title>Services | RSL - REF SOLUTIONS</title>
+    <!-- right click disable -->
+    <script type="text/javascript">
+        window.addEventListener('contextmenu', function (e) {
+            e.preventDefault(); // Prevent the default right-click menu
+        });
+    </script>
+</head>
+
+<body>
+    <!-- topbar -->
+    <section class="topbar bg-dark p-2">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-between">
+                    <a href="./contact.html" class="text-decoration-none">
+                        <div class="d-flex flex-row gap-3 align-items-baseline">
+                            <div
+                                class="phone-icon rounded-circle bg-icons d-flex justify-content-center align-items-center">
+                                <i class="bi bi-telephone-fill text-white"></i></div>
+                            <p class="text-white contact">Call : + 94 34 22 27 045 / + 77 54 66 302</p>
+                        </div>
+                    </a>
+                    <a href="./contact.html" class="text-decoration-none">
+                        <div class="d-flex flex-row gap-3 align-items-baseline">
+                            <div
+                                class="phone-icon rounded-circle bg-icons d-flex justify-content-center align-items-center">
+                                <i class="bi bi-envelope text-white"></i></div>
+                            <p class="text-white contact">Email : info@rslref.com </p>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid"
+                    alt="LogoImg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- hero section of services -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center">
+                        <h2>Our Services</h2>
+                        <p>WHAT IT TENDER SPOTS CAN WE SOLVE FOR YOU?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col col-12 col-lg-6 d-none d-lg-block">
+                    <img src="./images/auto-ac-repair.jpg" alt="" class="img-fluid object-fit-cover h-100 w-100">
+
+                </div>
+                <div class="col col-12 col-lg-6 p-5 bg-info-subtle">
+                    <h3 class="service-title">Auto AC repairs</h3>
+                    <ul class="service-list mt-4">
+                        <li class="mb-2">Experienced technicians specialized in Auto AC repair.</li>
+                        <li class="mb-2">Comprehensive diagnostic services for AC systems.</li>
+                        <li class="mb-2">Quality spare parts for all major AC brands.</li>
+                        <li class="mb-2">Customized solutions tailored to your vehicle's needs.</li>
+                        <li class="mb-2">Fast and reliable service with a focus on customer satisfaction.</li>
+                    </ul>
+
+                </div>
+
+                <div class="col col-12 col-lg-6 p-5 bg-body-secondary">
+                    <h3 class="service-title">Domestic AC Repairs</h3>
+                    <ul class="service-list mt-4">
+                        <li class="mb-2">Experienced technicians specialized in Auto AC repair.</li>
+                        <li class="mb-2">Comprehensive diagnostic services for AC systems.</li>
+                        <li class="mb-2">Quality spare parts for all major AC brands.</li>
+                        <li class="mb-2">Customized solutions tailored to your vehicle's needs.</li>
+                        <li class="mb-2">Fast and reliable service with a focus on customer satisfaction.</li>
+                    </ul>
+
+                </div>
+
+                <div class="col col-12 col-lg-6 d-none d-lg-block">
+                    <img src="./images/Domestic-AC-Repairs.jpg" alt="" class="img-fluid object-fit-cover h-100 w-100">
+
+                </div>
+
+                <div class="col col-12 col-lg-6 d-none d-lg-block">
+                    <img src="./images/Distribution-of-Auto-Ac-Accessories.jpg" alt=""
+                        class="img-fluid object-fit-cover h-100 w-100">
+
+                </div>
+
+                <div class="col col-12 col-lg-6 p-5 bg-info-subtle">
+                    <h3 class="service-title">Distribution of Auto Ac Accessories</h3>
+                    <ul class="service-list mt-4">
+                        <li class="mb-2">Wide range of accessories including compressors, condensers, evaporators,
+                            expansion valves, and refrigerant recharge kits</li>
+                        <li class="mb-2">Accessories sourced from trusted manufacturers to ensure high performance and
+                            durability.</li>
+                        <li class="mb-2">Compatibility with a variety of vehicle makes and models.</li>
+                        <li class="mb-2">Efficient distribution network for prompt delivery to customers.</li>
+                        <li class="mb-2">Expert assistance available for selecting the right accessories for specific
+                            auto AC systems.</li>
+                    </ul>
+
+                </div>
+                <!-- <div class="col col-12 col-lg-6 p-5 bg-body-secondary">
+                    <h3 class="service-title">Distribution of Auto Ac Accessories</h3>
+                    <ul class="service-list mt-4">
+                        <li class="mb-2">Wide range of accessories including compressors, condensers, evaporators, expansion valves, and refrigerant recharge kits</li>
+                        <li class="mb-2">Accessories sourced from trusted manufacturers to ensure high performance and durability.</li>
+                        <li class="mb-2">Compatibility with a variety of vehicle makes and models.</li>
+                        <li class="mb-2">Efficient distribution network for prompt delivery to customers.</li>
+                        <li class="mb-2">Expert assistance available for selecting the right accessories for specific auto AC systems.</li>
+                      </ul>
+
+                </div>
+                <div class="col col-12 col-lg-6 d-none d-lg-block">
+                    <img src="./images/services-4.jpg" alt="" class="img-fluid object-fit-cover h-100 w-100">
+
+                </div> -->
+
+                <div class="col col-12 col-lg-6 p-5 bg-info-subtle">
+                    <h3 class="service-title">Distribution of Washing Machine Accessories</h3>
+                    <ul class="service-list mt-4">
+                        <li class="mb-2">Comprehensive range of accessories for washing machines, including hoses, inlet
+                            valves, and drain pumps.</li>
+                        <li class="mb-2">High-quality accessories sourced from trusted manufacturers to ensure
+                            durability and performance.</li>
+                        <li class="mb-2">Wide compatibility with various washing machine brands and models.</li>
+                        <li class="mb-2">Efficient distribution network for prompt delivery of accessories to customers.
+                        </li>
+                        <li class="mb-2">Expert assistance in selecting the right accessories for specific washing
+                            machine models.</li>
+                    </ul>
+
+                </div>
+                <div class="col col-12 col-lg-6 d-none d-lg-block">
+                    <img src="./images/Distribution-of-Washing-Machine-Accessories.jpg" alt=""
+                        class="img-fluid object-fit-cover h-100 w-100">
+
+                </div>
+                <div class="col col-12 col-lg-6 d-none d-lg-block">
+                    <img src="./images/Distribution-of-Domestic-AC-units-Accessories.jpg" alt=""
+                        class="img-fluid object-fit-cover h-100 w-100">
+
+                </div>
+                <div class="col col-12 col-lg-6 p-5 bg-body-secondary">
+                    <h3 class="service-title">Distribution of Domestic AC units Accessories</h3>
+                    <ul class="service-list mt-4">
+                        <li class="mb-2">Wide range of accessories for domestic AC units including filters, remote
+                            controls, and thermostat sensors.</li>
+                        <li class="mb-2">High-quality accessories sourced from reputable manufacturers.</li>
+                        <li class="mb-2">Compatible accessories for various domestic AC brands and models.</li>
+                        <li class="mb-2">Efficient distribution network ensuring timely delivery to clients.</li>
+                        <li class="mb-2">Expert advice on selecting the right accessories for specific AC units.</li>
+                    </ul>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- footer section -->
+    <footer class="bg-dark text-center section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="socials">
+                        <a href="#" class="text-decoration-none"><i class="bi bi-facebook text-white"></i></a>
+                        <a href="#" class="text-decoration-none mx-3"><i class="bi bi-instagram text-white"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="bi bi-twitter-x text-white"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="links d-flex flex-row gap-3 justify-content-center">
+                        <a href="./index.html" class="text-decoration-none text-white">Home</a>
+                        <a href="./about.html" class="text-decoration-none text-white">About</a>
+                        <a href="./services.html" class="text-decoration-none text-white">Services</a>
+                        <a href="./contact.html" class="text-decoration-none text-white">Contact</a>
+                    </div>
+
+                </div>
+            </div>
+            <p class="text-white mt-4">@ RSL Ref Solutions (Pvt) Ltd. <br> All Right Reserved <br> Powerd By <a
+                    href="https://cdazzdev.com/" class="text-decoration-none text-white">CDAZZDEV</a></p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

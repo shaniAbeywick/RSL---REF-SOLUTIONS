@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Welcome to RSL Ref Solutions, your trusted partner for innovative and reliable air conditioning solutions. Explore our services, discover our commitment to quality, and contact us to experience unparalleled comfort in your space. Your satisfaction is our priority at RSL Ref Solutions.">
+  <link rel="icon" type="image/png" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- bootstrap-icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- google recaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="index.js"></script>
+  <!-- email js -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "s3oI8DgFgUtj89ZI_",
+      });
+    })();
+  </script>
+
+  <title>Home | RSL - REF SOLUTIONS</title>
+  <!-- right click disable -->
+  <script type="text/javascript">
+    window.addEventListener('contextmenu', function (e) {
+      e.preventDefault(); // Prevent the default right-click menu
+    });
+  </script>
+</head>
+
+<body>
+  <!-- topbar -->
+  <section class="topbar bg-dark p-2">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex justify-content-between">
+          <a href="./contact.html" class="text-decoration-none">
+            <div class="d-flex flex-row gap-3 align-items-baseline">
+              <div class="phone-icon rounded-circle bg-icons d-flex justify-content-center align-items-center"><i
+                  class="bi bi-telephone-fill text-white"></i></div>
+              <p class="text-white contact">Call : + 94 34 22 27 045 / + 77 54 66 302</p>
+            </div>
+          </a>
+          <a href="./contact.html" class="text-decoration-none">
+            <div class="d-flex flex-row gap-3 align-items-baseline">
+              <div class="phone-icon rounded-circle bg-icons d-flex justify-content-center align-items-center"><i
+                  class="bi bi-envelope text-white"></i></div>
+              <p class="text-white contact">Email : info@rslref.com </p>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" alt="LogoImg"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- hero -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/shop-front-view.jpg" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption">
+          <h5>First slide label</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium unde dolore obcaecati iste
+            perspiciatis ipsam sequi quidem atque quos. Accusantium, veniam facilis. Temporibus in omnis dignissimos
+            tempora voluptas consequatur!</p>
+          <p><a href="#" class="btn btn-color imt-3">Learn More</a></p>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="./images/shop-itmes-view.jpg" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div> -->
+      </div>
+      <div class="carousel-item">
+        <img src="./images/shop-team-working.jpg" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div> -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+
+  </div>
+  <!-- about section -->
+  <section class="about section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img">
+            <img src="./images/top-item-show-banner.jpg" alt="aboutImg" class="img-fluid">
+          </div>
+
+        </div>
+        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+          <div class="about-text mt-md-0 mt-5">
+            <p class="about-title">Welcome to RSL Ref Solutions (Pvt) Ltd</p>
+            <p>We believe in a collaborative approach, working closely with our clients throughout the solutions process
+              to ensure that the final product not only meets but exceeds their expectations. Open communication and
+              transparency are our guiding principles, providing our clients with a seamless Technical experience.
+            </p>
+            <p>
+              We possess the technical expertise and a rich history of experience across various types of vehicles ,
+              ensuring the successful execution of your solutions.
+            </p>
+            <a href="./about.html" class="btn btn-color text-white">Learn More</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- service section -->
+  <section class="services section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2>Our Services</h2>
+            <p>WHAT IT TENDER SPOTS CAN WE SOLVE FOR YOU?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-gap-3">
+        <div class="col col-lg-4 col-md-6 col-12">
+          <div class="card text-black text-center bg-info-subtle shadow-lg">
+            <div class="card-body">
+              <i class="bi bi-subtract"></i>
+              <h3 class="card-title">Auto AC repairs</h3>
+              <p class="lead"> Our team of skilled technicians is well-equipped to diagnose and address a wide range of
+                auto AC issues, from minor leaks to major component failures. Using advanced diagnostic tools and
+                high-quality replacement parts, we ensure efficient and lasting repairs. Whether it's a car, truck, or
+                SUV, our expert team is committed to restoring your vehicle's cooling system to optimal performance,
+                ensuring a comfortable and enjoyable driving experience for you.</p>
+              <a href="./services.html">
+                <button class="btn btn-color text-white">
+                  Read More
+                </button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-lg-4 col-md-6 col-12">
+          <div class="card text-black text-center bg-info-subtle shadow-lg">
+            <div class="card-body">
+              <i class="bi bi-box-fill"></i>
+              <h3 class="card-title">Domestic AC Repairs </h3>
+              <p class="lead">Our team of experienced technicians specializes in diagnosing and repairing all types of
+                domestic AC units. Whether it's a minor issue or a major repair, we have the expertise to get your AC up
+                and running efficiently. We use high-quality spare parts and advanced diagnostic tools to ensure lasting
+                repairs. With a focus on customer satisfaction, we strive to deliver fast and reliable service to ensure
+                your home stays cool and comfortable.</p>
+              <a href="./services.html">
+                <button class="btn btn-color text-white">
+                  Read More
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 col-12">
+          <div class="card text-black text-center bg-info-subtle shadow-lg">
+            <div class="card-body">
+              <i class="bi bi-fan"></i>
+              <h3 class="card-title">Distribution of Auto Ac Accessories </h3>
+              <p class="lead">Our inventory includes a variety of accessories such as compressors, condensers,
+                evaporators, expansion valves, and refrigerant recharge kits. Sourced from trusted manufacturers, our
+                accessories are designed to meet the highest standards of performance and durability. With our efficient
+                distribution network, we ensure prompt delivery to our customers, enabling them to quickly access the
+                necessary components to maintain or upgrade their auto AC systems.</p>
+              <a href="./services.html">
+                <button class="btn btn-color text-white">
+                  Read More
+                </button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-lg-4 col-md-6 col-12">
+          <div class="card text-black text-center bg-info-subtle shadow-lg">
+            <div class="card-body">
+              <i class="bi bi-grid"></i>
+              <h3 class="card-title">Distribution of Refrigerator Accessories</h3>
+              <p class="lead">Our inventory includes a diverse range of accessories such as shelves, drawers, door
+                seals, ice makers, water filters, and temperature sensors. Sourced from reputable manufacturers, our
+                accessories are designed to enhance the functionality and longevity of refrigerators. With our efficient
+                distribution network, we ensure timely delivery to our customers, enabling them to conveniently access
+                the necessary components for maintenance or customization of their refrigeration units.</p>
+              <a href="./services.html">
+                <button class="btn btn-color text-white">
+                  Read More
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 col-12">
+          <div class="card text-black text-center bg-info-subtle shadow-lg">
+            <div class="card-body">
+              <i class="bi bi-boxes"></i>
+              <h3 class="card-title">Distribution of Washing Machine Accessories</h3>
+              <p class="lead"> Our selection includes hoses, inlet valves, drain pumps, and more, sourced from trusted
+                manufacturers to ensure durability and performance. With wide compatibility across various washing
+                machine brands and models, our efficient distribution network ensures prompt delivery to our customers.
+                Our team of experts is dedicated to assisting you in selecting the right accessories tailored to your
+                specific washing machine needs.</p>
+              <a href="./services.html">
+                <button class="btn btn-color text-white">
+                  Read More
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 col-md-6 col-12">
+          <div class="card text-black text-center bg-info-subtle shadow-lg">
+            <div class="card-body">
+              <i class="bi bi-slack"></i>
+              <h3 class="card-title">Distribution of Domestic AC units Accessories </h3>
+              <p class="lead">we specialize in the distribution of a wide range of accessories for domestic AC units,
+                catering to the needs of homeowners and businesses alike. Our inventory includes essential accessories
+                such as filters, remote controls, thermostat sensors, and more. Sourced from reputable manufacturers,
+                our accessories are known for their quality and compatibility with various domestic AC brands and
+                models. With our efficient distribution network, we ensure timely delivery to our customers, enabling
+                them to enhance the performance and functionality of their AC units with ease.</p>
+              <a href="./services.html">
+                <button class="btn btn-color text-white">
+                  Read More
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- team section -->
+  <section class="team section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2>Our Team</h2>
+            <p>MEET OUR TEAM</p>
+          </div>
+        </div>
+      </div>
+      <div class="row row-gap-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center shadow-lg bg-body-secondary">
+            <div class="card-body">
+              <img src="./images/team_3.png" alt="teamImg" class="img-fluid rounded-circle">
+              <h3 class="card-title py-2">Ruban Weerasinghe </h3>
+              <h4 class="card-title py-2">CEO/MANAGING DIRECTOR
+              </h4>
+              <p class="card-text">With over 40 years of seasoned expertise across diverse industries, Ruban is a highly
+                accomplished specialist committed to delivering exceptional service. As a proactive and result-oriented
+                professional, he has ascended from a technical officer to an entrepreneur, founding operations with a
+                mission focused on "providing permanent, long-lasting solutions." A self-motivated team player, Ruban
+                possesses robust organizational and interpersonal skills. He is dedicated to continuous learning,
+                embracing additional responsibilities, and advancing his professional growth. Valuing health as
+                paramount, Ruban approaches his career with a holistic perspective.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center shadow-lg bg-body-secondary">
+            <div class="card-body">
+              <img src="./images/team_2.png" alt="teamImg" class="img-fluid rounded-circle">
+              <h3 class="card-title py-2">Srimathi Weerasinge</h3>
+              <h4 class="card-title py-2">DIRECTOR
+              </h4>
+              <br />
+
+              <p class="card-text">
+                Srimathi Weerasinghe boasts over 40 years of extensive teaching experience, having made significant
+                contributions to various educational institutions across Sri Lanka. Following her retirement, she
+                seamlessly transitioned into a pivotal role within her family's business, bringing her wealth of
+                knowledge and skills to further enhance its success. With a proven track record of excellence in
+                education and a keen business acumen, Srimathi is a distinguished professional committed to continuous
+                growth and achievement in both academic and entrepreneurial spheres.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center shadow-lg bg-body-secondary">
+            <div class="card-body">
+              <img src="./images/team_1.png" alt="teamImg" class="img-fluid rounded-circle">
+              <h3 class="card-title py-2">Lakshitha Weerasinghe</h3>
+              <h4 class="card-title py-2">DIRECTOR
+              </h4>
+              <br />
+              <p class="card-text">
+                Lakshitha, a proactive and results-driven professional, embarked on his technical journey immediately
+                after graduating with a CGTTI/C&G Ad. Dip. With over 10+ years of experience, he has demonstrated
+                exceptional technical expertise, training numerous technicians and providing outstanding service. A
+                self-motivated team player with strong organizational and interpersonal skills, Lakshitha successfully
+                initiated the import of machinery parts. Committed to continuous growth, he eagerly undertakes new
+                responsibilities and remains dedicated to learning. In addition, Lakshitha, inspired by his father,
+                prioritizes health and wellness.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer section -->
+  <footer class="bg-dark text-center section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="socials">
+            <a href="#" class="text-decoration-none"><i class="bi bi-facebook text-white"></i></a>
+            <a href="#" class="text-decoration-none mx-3"><i class="bi bi-instagram text-white"></i></a>
+            <a href="#" class="text-decoration-none"><i class="bi bi-twitter-x text-white"></i></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="links d-flex flex-row gap-3 justify-content-center">
+            <a href="./index.html" class="text-decoration-none text-white">Home</a>
+            <a href="./about.html" class="text-decoration-none text-white">About</a>
+            <a href="./services.html" class="text-decoration-none text-white">Services</a>
+            <a href="./contact.html" class="text-decoration-none text-white">Contact</a>
+          </div>
+
+        </div>
+      </div>
+      <p class="text-white mt-4">@ RSL Ref Solutions (Pvt) Ltd. <br> All Right Reserved <br> Powerd By <a
+          href="https://cdazzdev.com/" class="text-decoration-none text-white">CDAZZDEV</a></p>
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- smtp -->
+  <!-- <script src="https://smtpjs.com/v3/smtp.js">
+  </script> -->
+
+  <!-- email function -->
+  <!-- <script>
+    function sendEmail() {
+
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "shaniabeywickrama294@gmail.com",
+        Password: "6482E21B88EDBE51DA76654291DB261541C0",
+        To: 'shaniabeywickrama1997@gmail.com',
+        From: 'shaniabeywickrama294@gmail.com',
+        Subject: "New Contact Form Enquiry",
+        Body: "First Name : " + document.getElementById("firstName").value + "<br> Last Name : " + document.getElementById("lastName").value + "<br> Phone : " + document.getElementById("phone").value + "<br> Email : " + document.getElementById("email").value + "<br> Message : " + document.getElementById("message").value
+
+      }).then(
+        message => alert("Message sent sucessfully")
+      );
+
+    }
+
+
+  </script> -->
+
+
+</body>
+
+</html>
